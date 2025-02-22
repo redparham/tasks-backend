@@ -5,5 +5,5 @@ WORKDIR /app
 RUN mvn package
 
 FROM amazoncorretto:21-alpine3.21-jdk
-COPY --from=build /tmp/app/target/*.jar /app/app.jar
+COPY --from=build /app/target/*.jar /app/app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
