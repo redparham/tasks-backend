@@ -16,7 +16,10 @@ public class AppConfig {
                 registry
                         .addMapping("/**")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedOriginPatterns("https://tasks-backend-*.onrender.com");
+                        .allowedOriginPatterns(
+                                "https://tasks-backend-*.onrender.com",
+                                "https://*.github.dev"
+                        );
             }
         };
     }
