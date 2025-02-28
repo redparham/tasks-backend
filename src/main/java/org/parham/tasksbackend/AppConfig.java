@@ -17,8 +17,8 @@ public class AppConfig {
                         .addMapping("/**")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedOriginPatterns(
-                                "https://tasks-backend-*.onrender.com",
-                                "https://*.github.dev"
+                                "https://*.github.dev",
+                                "https://redparham.github.io"
                         );
             }
         };
